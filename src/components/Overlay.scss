@@ -1,0 +1,18 @@
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(37, 37, 37, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    & > span {
+        color: white;
+        font-size: 48px;
+        font-weight: bold;
+    }
+}

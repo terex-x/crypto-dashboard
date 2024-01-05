@@ -1,0 +1,17 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+
+  .header {
+    color: white;
+    font-size: 36px;
+  }
+
+  .wrapper {
+    padding: 20px;
+    background-color: #373737;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4px;
+  }
+}

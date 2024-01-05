@@ -1,0 +1,55 @@
+.crypto-chart {
+  padding: 50px 15px 15px;
+  background: rgba(100, 255, 100, 0.6);
+  color: white;
+  font-size: 10px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+  position: relative;
+
+  .crypto-details {
+    position: absolute;
+    top: 8px;
+    width: calc(100% - 30px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .details-left {
+      align-items: flex-start;
+
+      .crypto-name {
+        font-weight: bold;
+      }
+
+      .price-current {
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+
+    .details-right {
+      align-items: flex-end;
+
+      .price-change {
+        font-weight: bold;
+      }
+
+      .price-low, .price-high {
+        font-size: 8px;
+      }
+    }
+  }
+
+  &.positive {
+    border-left: 5px solid green;
+  }
+
+  &.negative {
+    border-left: 5px solid red;
+  }
+}
