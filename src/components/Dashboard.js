@@ -110,6 +110,9 @@ export const Dashboard = () => {
       loadCryptoMarketData();
       loadCryptoExchangeData();
     }, 5 * 60 * 1000); // refresh the dashboard every 5 mins
+    
+    loadCryptoMarketData();
+    loadCryptoExchangeData();
 
     return () => {
       clearInterval(intervalId);
